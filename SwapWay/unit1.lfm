@@ -1,0 +1,63 @@
+object Form1: TForm1
+  Left = 463
+  Height = 240
+  Top = 145
+  Width = 320
+  Caption = 'Swap way version 1.0'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '4.0.0.4'
+  object Memo1: TMemo
+    AnchorSideLeft.Control = Button1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 115
+    Height = 240
+    Top = 0
+    Width = 205
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 3
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 33
+    Top = 8
+    Width = 104
+    Caption = 'Integer'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 8
+    Height = 33
+    Top = 48
+    Width = 104
+    Caption = 'Double'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 8
+    Height = 33
+    Top = 88
+    Width = 104
+    Caption = 'Array of Integer '
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 8
+    Height = 33
+    Top = 128
+    Width = 104
+    Caption = 'Array of String'
+    TabOrder = 4
+    OnClick = Button4Click
+  end
+end
